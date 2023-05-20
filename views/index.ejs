@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Page </title>
+    <link rel="stylesheet" href="root.css">
+</head>
+<body>
+    <%- include('./includes/header.ejs') %>
+    <main>
+        <section class="form-container">
+            <form action="/users" method="POST">
+                <div class="input">
+                    <input type="text" name="username" placeholder="enter your name here" required>
+                    <button type="submit"> Take Subscription </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
