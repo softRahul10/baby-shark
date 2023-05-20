@@ -12,14 +12,19 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', (req, res) => {
-    res.render('index', { pageName: 'Home page' });
+    res.render('index', { pageName: 'Home page', path: '/' });
 })
 app.get('/users', (req, res) => {
-    res.render('user', { pageName: 'Users', users: userslist });
+    res.render('user', { pageName: 'Users', path: '/users', users: userslist });
 })
 app.post('/users', (req, res) => {
     userslist.push(req.body.username);
     res.redirect('/users');
+})
+
+app.use((req, res) => {
+    res.status(404);
+    res.render('404',{ pageName: 'Not Found' , path: req.url});
 })
 
 app.listen(3000, () => {
