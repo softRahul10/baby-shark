@@ -6,3 +6,23 @@ body {
     margin:0;
     background-color: #eee;
 }
+
+/* form css */
+.form-container {
+    margin: 1rem auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    font-size: 1rem;
+}
