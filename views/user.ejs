@@ -1,0 +1,13 @@
+    <%- include('./includes/head.ejs') %>
+
+    <body>
+        <%- include('./includes/nav.ejs') %> 
+        <section class="user-container"> 
+            <ul>
+            <% for(user of users) { %>
+                <li> <%= user %> </li>
+            <% } %> 
+            </ul> 
+        </section>
+    </body>
+</htm>
