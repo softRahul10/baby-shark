@@ -1,8 +1,9 @@
 {
   "name": "baby-shark",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic Express application using EJS templates",
   "main": "index.js",
+  "private":true,
   "scripts": {
     "start":"nodemon server.js"
   },
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/softRahul10/baby-shark.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "soft-rahul Rahul Keshri",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/softRahul10/baby-shark/issues"
